@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 class HelloController {
 
-    @Value("${dzp.hello}")
+    @Value("${eureka.url}")
     private String hello;
 
     @RequestMapping("/hello")
